@@ -1,13 +1,11 @@
 package entregable;
 
+import java.sql.Connection;
 import java.util.Scanner;
 
 public class Main {
-    static final String JDBC_DRIVER="org.mariadb.jdbc.Driver";
-    static final String DB_URL = "jdbc:mariadb://127.0.0.1:3306/dam";
-    static final String User = "root";
-    static final String Pass = "";
-        static Tarea tasks[] = new Tarea[50];
+
+    public static Connection conn = Switch.ConexionB();
         static int noTareas = 0;
 
         public static void main(String[] args) {
