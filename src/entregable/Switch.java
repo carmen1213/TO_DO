@@ -24,7 +24,7 @@ public class Switch {
         System.out.println("Escribir una nueva Tarea:");
         String titulo = sc.nextLine();
 
-        String sql = "INSERT INTO tarea(Tareas) VALUES(?)";
+        String sql = "INSERT INTO tareas(Titulo) VALUES(?)";
         PreparedStatement prpStatement;
 
         try {
